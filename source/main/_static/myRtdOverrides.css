@@ -1,0 +1,25 @@
+.section li {
+  margin-bottom: 5px;
+}
+
+/* p {
+  margin-bottom: 5px;
+} */
+
+p {
+  margin: initial;
+}
+
+
+.sphinx-tab.tab.segment {
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+
+#rtd-search-form {
+  display: none;
+}
