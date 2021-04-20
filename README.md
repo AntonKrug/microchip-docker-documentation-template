@@ -44,6 +44,11 @@ current_dir=${current_dir#/mnt} # uncomment when using WSL1 with Docker on Windo
 ```
 This is due differences how WSL1 mounts Windows volumes (/mnt/c/) compared to how Docker for Windows mounts Windwos volumes (/c/), passing to docker a path which was working in WSL1 will not work.
 
+If set incorrectly then error message like this might be displayed:
+```
+bash: line 0: cd: /project/source/main: No such file or directory
+```
+
 # Build the documentation
 
 
