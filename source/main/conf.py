@@ -4,7 +4,8 @@ from datetime import date
 import sphinx_ops_theme
 
 
-project = u'Documetation title'
+project = u'Example document'
+release = u'v1.0'
 copyright = date.today().strftime("%Y") + u' Microchip'
 author = u'Microchip'
 
@@ -38,6 +39,8 @@ html_theme_path = [sphinx_ops_theme.get_html_theme_path()]
 html_static_path = ['_static']
 html_css_files = ['myRtdOverrides.css']
 html_logo = '_static/mhcp-100.png'
+
+templates_path = ['_templates']
 
 html_show_sphinx = False
 html_show_sourcelink = False
