@@ -37,7 +37,7 @@ html_theme = "sphinx_ops_theme"
 html_theme_path = [sphinx_ops_theme.get_html_theme_path()]
 html_static_path = ['_static']
 html_css_files = ['myRtdOverrides.css']
-html_logo = '_static/mhcp.png'
+html_logo = '_static/mhcp-100.png'
 
 html_show_sphinx = False
 html_show_sourcelink = False
