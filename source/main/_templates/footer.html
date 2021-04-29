@@ -1,0 +1,12 @@
+{% extends '!footer.html' %} 
+
+{% block extrafooter %} 
+<a id=feeedbackLink><img src="_static/feedback2.png"></a>
+
+<script>
+    var uri = "http://feedback.com?document={{project}}&release={{release}}&page={{sourcename}}";
+    var res = encodeURI(uri);
+    document.getElementById("feeedbackLink").href = res;
+</script>
+    
+{% endblock %}
