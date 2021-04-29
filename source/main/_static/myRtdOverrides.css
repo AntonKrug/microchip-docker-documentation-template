@@ -24,11 +24,30 @@ h3 {
   display: none;
 }
 
+/* Hide search */
 .wy-side-nav-search {
   background-color: rgb(0,0,0);
 }
 
 
+/* larger content size, smaller navigation */
+.wy-side-nav-search {
+  width: 250px;
+}
+.wy-nav-side {
+  width: 250px;
+}
+.wy-menu-vertical {
+  width: 250px;
+}
+.wy-side-scroll {
+  width: 270px;
+}
+
 .wy-nav-content {
-  max-width: 900px;
+  max-width: 950px;
+  min-height: 100vh;
+}
+.wy-nav-content-wrap {
+  margin-left: 250px;
 }
