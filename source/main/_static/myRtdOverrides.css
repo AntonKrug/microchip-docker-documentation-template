@@ -23,3 +23,7 @@ h3 {
 #rtd-search-form {
   display: none;
 }
+
+.wy-side-nav-search {
+  background-color: rgb(0,0,0);
+}
