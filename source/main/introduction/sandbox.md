@@ -60,24 +60,10 @@ print(node)
 ---
 lineno-start: 10
 emphasize-lines: 1, 3
-caption: |
-    This is my
-    multi-line caption. It is **pretty nifty** 
 ---
 a = 2
 b = a + 4
 c = a + b+ a + 4
-print('my 1st line')
-print(f'my {a}nd line')
-```
-
-
-```{code-block} python
----
-lineno-start: 10
-emphasize-lines: 1, 3
----
-a = 2
 print('my 1st line')
 print(f'my {a}nd line')
 ```
@@ -88,31 +74,6 @@ print(f'my {a}nd line')
 | :--- | ---: |
 | c    | d    |
 
-
-
-`````{list-table}
-:header-rows: 1
-
-* - Token
-  - Description
-* - FrontMatter
-  - A YAML block at the start of the document enclosed by `---`
-* - Directives
-  - enclosed in 3 or more backticks followed by the directive name wrapped
-  in curly brackets `{}`.
-* - Math
-  - `$$` (default) or `\[`...`\]` characters wrapping multi-line math, or even direct [amsmath](https://ctan.org/pkg/amsmath) LaTeX equations (optional).
-* - Table
-  - Standard markdown table style, with pipe separation.
-* - LineComment
-  - A commented line.
-* - BlockBreak
-  - Define blocks of text.
-* - Footnote
-  - A definition for a referencing footnote, that is placed at the bottom of the document.
-* - Admonitions (optional)
-  - An alternative approach for admonition style directives only, which has the benefit of allowing the content to be rendered in standard markdown editors.
-`````
 
 ## Graphviz
 
