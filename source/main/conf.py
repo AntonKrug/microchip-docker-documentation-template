@@ -1,7 +1,7 @@
 import os
 import sys
 from datetime import date
-import sphinx_ops_theme
+import sphinx_rtd_theme
 
 
 project = u'Example document'
@@ -16,7 +16,7 @@ needs_sphinx = '3.3'
 
 extensions = [
     'sphinx.ext.todo', 'sphinx_tabs.tabs', 'sphinx.ext.graphviz', 
-    'myst_parser', 'sphinxcontrib.wavedrom', 'sphinx_copybutton' ]
+    'myst_parser', 'sphinxcontrib.wavedrom', 'sphinx_copybutton', 'sphinx_rtd_theme' ]
 
 numfig = True
 wavedrom_html_jsinline = False
@@ -34,8 +34,7 @@ exclude_patterns = ['Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 todo_include_todos = False
 
-html_theme = "sphinx_ops_theme"
-html_theme_path = [sphinx_ops_theme.get_html_theme_path()]
+html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = ['myRtdOverrides.css']
 html_logo = '_static/mhcp-100.png'
