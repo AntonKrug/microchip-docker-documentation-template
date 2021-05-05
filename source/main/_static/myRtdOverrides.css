@@ -1,56 +1,31 @@
+/* Spacing between bullet points */
 .section li {
   margin-bottom: 5px;
 }
 
-/* p {
-  margin-bottom: 5px;
-} */
-
-p {
-  margin: initial;
-}
-
-
-.sphinx-tab.tab.segment {
-  padding-bottom: 5px;
-}
-
-h3 {
-  margin-top: 10px;
-}
-
-
-/* Hide search */
-#rtd-search-form {
-  display: none;
-}
-
-/* Black sidebard */
-.wy-side-nav-search {
-  background-color: rgb(0,0,0);
-}
-
-/* Larger content */
+/* Larger content body */
 .wy-nav-content {
-  max-width: 900px;
+  max-width: 950px;
   min-height: 100vh;
 }
 
+/* Highlighted text has less saturated background */
+.highlight {
+  background: #fefffa;
+}
 
-/* Smaller navigation */
+/* But more saturated line */
+.highlight .hll {
+  background-color: #ff9;
+}
+
+/* Black background for search */
 .wy-side-nav-search {
-  width: 250px;
-}
-.wy-nav-side {
-  width: 250px;
-}
-.wy-menu-vertical {
-  width: 250px;
-}
-.wy-side-scroll {
-  width: 270px;
+  background-color: black;
 }
 
-.wy-nav-content-wrap {
-  margin-left: 250px;
+/* Gray version text */
+.wy-side-nav-search>div.version {
+  color:hsla(0,0%,100%,.5)
 }
+ 
