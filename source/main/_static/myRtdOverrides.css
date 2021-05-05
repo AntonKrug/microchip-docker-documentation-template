@@ -24,8 +24,25 @@
   background-color: black;
 }
 
+/* Black background for top bar showing in mobile version */
+.wy-nav-top {
+  background-color: black;
+}
+
 /* Gray version text */
 .wy-side-nav-search>div.version {
   color:hsla(0,0%,100%,.5)
 }
  
+/* Increased spacing on top of headers */
+h1 {
+  margin-top: 14px;
+}
+
+h2 {
+  margin-top: 12px;
+}
+
+h3 {
+  margin-top: 10px;
+}
