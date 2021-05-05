@@ -20,17 +20,24 @@ h3 {
 }
 
 
+/* Hide search */
 #rtd-search-form {
   display: none;
 }
 
-/* Hide search */
+/* Black sidebard */
 .wy-side-nav-search {
   background-color: rgb(0,0,0);
 }
 
+/* Larger content */
+.wy-nav-content {
+  max-width: 900px;
+  min-height: 100vh;
+}
 
-/* larger content size, smaller navigation */
+
+/* Smaller navigation */
 .wy-side-nav-search {
   width: 250px;
 }
@@ -44,10 +51,6 @@ h3 {
   width: 270px;
 }
 
-.wy-nav-content {
-  max-width: 950px;
-  min-height: 100vh;
-}
 .wy-nav-content-wrap {
   margin-left: 250px;
 }
