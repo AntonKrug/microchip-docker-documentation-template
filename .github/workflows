@@ -1,0 +1,11 @@
+on: [push]
+jobs:
+  build-offline-doc:
+    runs-on: antonkrug/documentation-builders-ng:0fa69ed
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: cd source/main
+      - run: make html
+      - run: cd ../../
+      
