@@ -7,4 +7,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - run: cd source/main && make html
-      
+      - run: cd source/main && make linkcheck
+      - run: cd source/main && make html && cd ../../ && zip -r offline-doc-archive.zip ./build/main 
+      - run: ls -la
