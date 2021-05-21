@@ -10,3 +10,15 @@ jobs:
       - run: cd source/main && make linkcheck
       - run: cd source/main && make html && cd ../../ && zip -r offline-doc-archive.zip ./build/main 
       - run: ls -la
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Snapshot of the documentation ${{ github.ref }}
+          body: |
+            Build of the documentation for offline viewing
+          draft: false
+          prerelease: false
