@@ -10,5 +10,5 @@ mkdir -p ./build/main
 
 echo "Generating HTML"
 current_dir=`pwd`
-#current_dir=${current_dir#/mnt} # uncomment when using WSL1 with Docker on Windows 10
+current_dir=${current_dir#/mnt} # uncomment when using WSL1 with Docker on Windows 10
 docker run --rm -v $current_dir:/project antonkrug/documentation-builders-ng:d2e4a88 bash -c "cd /project/source/main && make html"
