@@ -1,4 +1,8 @@
-on: [push]
+on: 
+  push:
+    tags:
+    - '*'
+
 jobs:
   build-offline-doc:
     runs-on: ubuntu-latest
@@ -12,7 +16,6 @@ jobs:
       - run: ls -la
       - uses: ncipollo/release-action@v1
         with:
-          name: "Offline doc"
           artifacts: "offline-doc-archive.zip"
           body: "Snapshot offline doc"
           token: ${{ secrets.GITHUB_TOKEN }}
