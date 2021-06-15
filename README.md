@@ -35,7 +35,7 @@ Log out and relog into your account (or reboot)
 ```
 sudo service docker restart
 
-systemctl restart docker
+sudo systemctl restart docker
 
 docker run hello-world
 ```
