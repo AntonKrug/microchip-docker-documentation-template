@@ -9,9 +9,16 @@ Docker needs to be installed to run docker containers (skip if you have already 
 ## Installation of Docker on Ubuntu
 
 
+Copy these one line at the time, if there are errors/warning then it might not be safe to procced.
+
+For example unattended-upgrade can interfere with this process (my preference is to get rid of the unattended upgrades)
+
+<https://ostechnix.com/how-to-disable-unattended-upgrades-on-ubuntu/>
+
+
 ```
 sudo apt-get update
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common gnupg-utils 
+sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common gnupg-utils
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 version_name=$(lsb_release -cs)
@@ -21,12 +28,19 @@ sudo apt-get -y install docker-ce
 
 sudo groupadd docker
 sudo gpasswd -a ${USER} docker
+```
+
+Log out and relog into your account (or reboot)
+
+```
 sudo service docker restart
 
 systemctl restart docker
 
 docker run hello-world
 ```
+
+If the `docker run hello-world` run correctly and without sudo, then your docker is setup correctly
 
 ## Installation of Docker on Debian
 
